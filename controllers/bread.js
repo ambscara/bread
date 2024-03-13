@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
     res.redirect('/bread')
 })
 
-// PUT/PATCH
+// PUT update board
 router.put('/:index', (req, res) => {
     const { index } = req.params
     if (!req.body.image) req.body.image = 'https://houseofnasheats.com/wp-content/uploads/2022/02/French-Bread-1.jpg'
