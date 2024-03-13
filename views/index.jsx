@@ -4,8 +4,8 @@ const Default = require('./layouts/default')
 function Index({ breads }) {
     const display = breads.map((bread, i) => {
         return (
-        <li key={i}>
-          <a href={`/bread/${i}`}>{bread.name}</a>
+        <li>
+          <a href={`/bread/${bread.id}`}>{bread.name}</a>
         </li>
         )
     })
